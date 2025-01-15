@@ -12,6 +12,7 @@
 }
 
 .top-container {
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -39,7 +40,7 @@
   
   /* Rotate first bar */
   .change .bar1 {
-    transform: translate(0, 9px) rotate(-45deg);
+    transform: translate(0, 7px) rotate(-45deg);
   }
   
   /* Fade out the second bar */
@@ -47,7 +48,7 @@
   
   /* Rotate last bar */
   .change .bar3 {
-    transform: translate(0, -9px) rotate(45deg);
+    transform: translate(0, -7px) rotate(45deg);
   }
 
 .tracklist-img {
@@ -69,8 +70,8 @@
     border: 1px solid grey;
     border-radius: 25px;
     padding: 5px;
-    width: 400px;
-    max-width: 400px;
+    width: 100%;
+    max-width: 420px;
 }
 
 
@@ -84,6 +85,7 @@
     height: 29px;
     border: none;
     font-size: 12px;
+    padding-left: 5px;
 }
 
 .search-bar form {
