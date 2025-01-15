@@ -60,6 +60,20 @@
 }
 
 .search-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-height: 15px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 5px;
+    width: 300px;
+}
+
+/* .search-bar {
+    display: flex;
     flex-shrink: 0;
     border: 1px solid rgb(170, 169, 169);
     border-radius: 15px;
@@ -74,10 +88,9 @@
     height: 25px;
     max-width: 350px;
     margin: auto;
-}
+} */
 
-.search-box input {
-    position: absolute;
+/* .search-box input {
     height: 100%;
     width: 100%;
     border-radius: 50px;
@@ -85,23 +98,33 @@
     outline: none;
     padding-left: 15px;
     font-size: 15px;
-}
+} */
 
+/*
 .fa-search {
     position: absolute;
-    /* right: 0;
-    top: 0; */
+    right: 0;
+    top: 0; 
     width: 30px;
     background: grey;
     height: 100%;
+}
+*/
+
+.color-wrapper {
+    position: absolute;
+    left: 0;
+    background-color: rgb(16, 144, 219);
+    height: 15px;
+    padding: 5px;
+    border-radius: 25px;
 }
 
 /* The container must be positioned relative: */
 .custom-select {
     position: relative;
     font-family: 'Noto Sans', serif;
-    font-size: 12px;
-    border: none;
+    font-size: 10px;
 }
   
 .custom-select select {
@@ -158,7 +181,7 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.search-border {
+/* .search-border {
     width: 1px;
     height: 10px;
 }
@@ -170,8 +193,8 @@
     font-size: 15px;
 }
 
-/*
-.search-bar button {
+
+.fa-search {
     background: none;
     background-color: rgb(216, 216, 216); 
     border: none;
@@ -179,8 +202,14 @@
     margin: 0;
     cursor: pointer;
     color: rgb(255, 255, 255);
+} */
+
+.fa-search {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    color: rgb(16, 144, 219);
 }
-*/
 
 .top-options {
     display: flex;
