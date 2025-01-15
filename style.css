@@ -1,22 +1,218 @@
+.body {
+    font-family: 'Noto Sans', serif;
+    margin: 0;
+    padding: 0;
+}
+
 .top-nav {
     width: 100%;
     display: flex;
-    background-color: aqua;
+    /* background-color: rgb(16, 144, 219);  */
+    font-family: 'Noto Sans', serif;
 }
 
-.tracklist-img {
-    width: 200px;
-}
-
-.search-bar {
+.top-container {
     display: flex;
-    background-color: pink;
-    border: 1px solid black;
-    border-radius: 5px;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
 
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 1px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+  }
+
+.tracklist-img {
+    width: 175px;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex-shrink: 0;
+    border: 1px solid rgb(170, 169, 169);
+    border-radius: 15px;
+    align-items: center;
+    height: min-content;
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-bar, .search-box {
+    position: relative;
+    height: 25px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background: #fff;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
 .fa-search {
-    padding: 7px;
-    background: white;
+    position: absolute;
+    /* right: 0;
+    top: 0; */
+    width: 30px;
+    background: grey;
+    height: 100%;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: 'Noto Sans', serif;
+    font-size: 12px;
+    border: none;
+}
+  
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+  
+.select-selected {
+    background-color: white;
+}
+  
+  /* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: 12px; 
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(16, 144, 219) transparent transparent transparent;
+}
+  
+  /* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(16, 144, 219) transparent;
+    top: 2px;
+}
+  
+  /* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: black;
+    /* padding: 2px 5px; */
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+  
+  /* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white ;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+  /* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-border {
+    width: 1px;
+    height: 10px;
+}
+
+.input-box {
+    height: 20px;
+    width: 300px;
+    border: none;
+    font-size: 15px;
+}
+
+/*
+.search-bar button {
+    background: none;
+    background-color: rgb(216, 216, 216); 
+    border: none;
+    padding: 7px 10px;
+    margin: 0;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+*/
+
+.top-options {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    /* font-family: 'Noto Sans', serif; */
+    /* color: rgb(16, 144, 219); */
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-right {
+    width: min-content;
+    margin-right: 20px;
+}
+
+.account {
+    font-size: 10px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.account p {
+    margin-right: 5px;
+}
+
+.nav-right .fa-user {
+    color: rgb(16, 144, 219);
+    font-size: 18px;
 }
