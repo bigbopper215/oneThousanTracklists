@@ -72,7 +72,7 @@ body {
     max-height: 25px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;
-    padding: 5px;
+    padding: 0.3125em;
     width: 100%;
     max-width: 450px;
 }
@@ -88,7 +88,7 @@ body {
     height: 29px;
     border: none;
     font-size: 0.8rem;
-    padding-left: 30px;
+    padding-left: 2.5em;
     width: 350px;
     border: none;
     outline: none;
@@ -152,7 +152,7 @@ body {
     left: 0;
     background-color: rgb(16, 144, 219);
     height: 25px;
-    padding: 5px;
+    padding: 0.3125em;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -199,7 +199,7 @@ body {
   /* style the items (options), including the selected item: */
 .select-items div,.select-selected {
     color: white;
-    padding: 1px 4px; 
+    padding: 0.0625em 0.25em; 
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     background-color: rgb(16, 144, 219);
@@ -269,7 +269,7 @@ body {
 }
 
 .top-options p {
-    padding: 8px;
+    padding: 0.5em;
     border-radius: 25px;
 }
 
@@ -291,14 +291,14 @@ body {
 .account {
     font-size: 0.625rem;
     height: 20px;
-    padding: 5px;
+    padding: 0.3125em;
     border: 1px solid grey;
     border-radius: 75px;
     display: flex;
     align-items: center;
-    padding-left: 9px;
-    padding-right: 9px;
-    margin-right: 8px;
+    padding-left: 0.5625em;
+    padding-right: 0.5625em;
+    margin-right: 0.5em;
 }
 
 /* .account p {
